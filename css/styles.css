@@ -124,8 +124,36 @@ h3 {
 /*_______HEADER________*/
 .header {
   background-color: var(--clean-color);
-  border-bottom: 1px transparent;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+  padding: 24px 0;
+}
+
+.header-menu {
+  display: flex;
+  margin-left: 77px;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu .menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts .contacts-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .logo {
@@ -175,8 +203,14 @@ h3 {
 /*________index.html MAIN________*/
 
 /*_____HERO____ */
+
+.hero .container {
+  padding: 192px 0;
+}
+
 .hero {
   background-color: var(--dark-color);
+
   text-align: center;
 }
 
@@ -291,7 +325,7 @@ h3 {
 .works {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: -12px;
 }
 
 .works-item {
@@ -300,15 +334,7 @@ h3 {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 
   padding-bottom: 32px;
-  max-width: 360px;
-}
-
-.works-item:not(:nth-child(3n)) {
-  margin-right: 24px;
-}
-
-.works-item:not(:nth-child(n + 7)) {
-  margin-bottom: 48px;
+  margin: 12px;
 }
 
 .works-item:hover,
@@ -324,6 +350,7 @@ h3 {
 /*________FOOTER________*/
 .footer {
   background-color: var(--dark-color);
+
   padding-top: 100px;
   padding-bottom: 100px;
 }
